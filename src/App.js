@@ -33,11 +33,11 @@ class App extends Component {
           width: '100vw',
           height: '100vh',
           display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          padding: '50px'
         }}
       >
-        <div style={{ width: '340px' }}>
+        <div style={{ width: '420px' }}>
           <QrReader
             onError={this.handleError}
             onScan={this.handleScan}
