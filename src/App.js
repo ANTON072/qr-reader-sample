@@ -27,8 +27,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div style={{ width: '500px' }}>
+      <div
+        className="App"
+        style={{
+          width: '100vw',
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <div style={{ width: '340px' }}>
           <QrReader
             onError={this.handleError}
             onScan={this.handleScan}
